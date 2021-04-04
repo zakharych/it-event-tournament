@@ -1,0 +1,42 @@
+[
+  {
+    "pic": "./assets/img/BG-11.png",
+    "team_1_name": "TeamJ 1",
+    "team_1_score": "01",
+    "team_2_name": "TeamJ 2",
+    "team_2_score": "02",
+    "brodcas_position": "prev",
+    "timeOut": "4",
+    "scoreBg": "true"
+  },
+  {
+    "pic": "./assets/img/BG-11.png",
+    "team_1_name": "Natus Cancere",
+    "team_1_score": "03",
+    "team_2_name": "Shabunkle",
+    "team_2_score": "04",
+    "brodcas_position": "now",
+    "timeOut": "7",
+    "scoreBg": "false"
+  },
+  {
+    "pic": "./assets/img/BG-11.png",
+    "team_1_name": "GRAVIZAPPA",
+    "team_1_score": "05",
+    "team_2_name": "Bataisk Justice",
+    "team_2_score": "06",
+    "brodcas_position": "next",
+    "timeOut": "5",
+    "scoreBg": "true"
+  },
+  {
+    "pic": "./assets/img/BG-11.png",
+    "team_1_name": "PressF!",
+    "team_1_score": "07",
+    "team_2_name": "Royal slARK",
+    "team_2_score": "08",
+    "brodcas_position": "",
+    "timeOut": "3",
+    "scoreBg": "true"
+  }
+]
