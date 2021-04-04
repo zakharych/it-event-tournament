@@ -102,10 +102,8 @@ function runSlider() {
   }, 2100);
   const timeOut = sliderList.children[0].getAttribute("data-timeOut");
   if (!Number(timeOut)) {
-    console.log(timeOut);
     setTimeout(runSlider, 7000);
   } else {
-    console.log(timeOut);
     setTimeout(runSlider, timeOut);
   }
 }
