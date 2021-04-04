@@ -3,10 +3,12 @@
   DB.forEach((element, i) => {
     createSlides(element, i);
     if (i === DB.length - 1) {
-      setTimeout(
-        runSlider,
-        sliderList.children[0].getAttribute("data-timeOut")
-      );
+      const timeOut = sliderList.children[0].getAttribute("data-timeOut");
+      if (!Number(timeOut)) {
+        setTimeout(runSlider, 7000);
+      } else {
+        setTimeout(runSlider, timeOut);
+      }
     }
   });
 })();
@@ -15,23 +17,6 @@ const wrapper = document.querySelector(".wrapper");
 const sliderList = document.querySelector(".slider");
 const btn = document.querySelector(".btn");
 const slides = document.querySelectorAll(".slide");
-// btn.addEventListener("click", () => {
-//   sliderList.appendChild(sliderList.firstElementChild);
-//   sliderList.children[0].classList.remove("slide__opacity");
-//   sliderList.children[0].classList.add("animate__animated", "animate__fadeIn");
-//   sliderList.children[sliderList.childElementCount - 1].classList.add(
-//     "animate__animated",
-//     "animate__fadeOut"
-//   );
-//   setTimeout(() => {
-//     sliderList.children[sliderList.childElementCount - 1].classList.add(
-//       "slide__opacity"
-//     );
-//     Array.from(sliderList.children).forEach((elem) => {
-//       removeAnimateClass(elem);
-//     });
-//   }, 1100);
-// });
 
 function removeAnimateClass(elem) {
   elem.classList.remove(
@@ -40,6 +25,7 @@ function removeAnimateClass(elem) {
     "animate__fadeOut"
   );
 }
+
 function createSlides(slideInfo, i) {
   const slide = document.createElement("li");
   slide.className = "slide";
@@ -114,5 +100,12 @@ function runSlider() {
       removeAnimateClass(elem);
     });
   }, 2100);
-  setTimeout(runSlider, sliderList.children[0].getAttribute("data-timeOut"));
+  const timeOut = sliderList.children[0].getAttribute("data-timeOut");
+  if (!Number(timeOut)) {
+    console.log(timeOut);
+    setTimeout(runSlider, 7000);
+  } else {
+    console.log(timeOut);
+    setTimeout(runSlider, timeOut);
+  }
 }
