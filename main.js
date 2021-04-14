@@ -5,9 +5,9 @@
     if (i === DB.length - 1) {
       const timeOut = sliderList.children[0].getAttribute("data-timeOut");
       if (!Number(timeOut)) {
-        // setTimeout(runSlider, 7000);
+        setTimeout(runSlider, 7000);
       } else {
-        // setTimeout(runSlider, timeOut);
+        setTimeout(runSlider, timeOut);
       }
     }
   });
@@ -75,17 +75,14 @@ function createSlides(slideInfo, i) {
   teamTwo.append(teamScoreTwo);
 
   const broadcastPosition = document.createElement("div");
-  broadcastPosition.className = "broadcats-position";  
+  broadcastPosition.className = "broadcats-position";
   broadcastPosition.style.backgroundColor = slideInfo.brodcas_position_color;
   broadcastPosition.style.color = slideInfo.brodcas_font_color;
 
   broadcastPosition.innerText = slideInfo.brodcas_position;
-  // if (slideInfo.brodcas_position) {
-  //   broadcastPosition.classList.add(
-  //     `broadcats-position--${slideInfo.brodcas_position}`
-  //   );
-  // }
-  scors.append(broadcastPosition);
+  if (slideInfo.brodcas_position) {
+    scors.append(broadcastPosition);
+  }
 
   const broadcastInfo = document.createElement("div");
   broadcastInfo.className = "broadcats-info";
@@ -94,13 +91,12 @@ function createSlides(slideInfo, i) {
 
   if (slideInfo.brodcas_info) {
     brodcasInfoArr = slideInfo.brodcas_info.split("/");
-    brodcasInfoArr.forEach(element => {
-      element.trim()
+    brodcasInfoArr.forEach((element) => {
+      element.trim();
       const broadcastInfoInner = document.createElement("span");
       broadcastInfoInner.className = "broadcats-info-inner";
       broadcastInfoInner.innerText = element;
       broadcastInfo.append(broadcastInfoInner);
-
     });
   }
   scors.append(broadcastInfo);
