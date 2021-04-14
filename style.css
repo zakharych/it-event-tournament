@@ -2023,26 +2023,95 @@
 
 .broadcats-position {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   z-index: 10;
   height: 138px;
   right: 0;
   bottom: 0;
-  width: 610px;
+  width: 558px;
   border-radius: 50px 0 0 0;
   text-align: center;
   color: #030e33;
-  font-weight: 700;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-style: italic;
   font-size: 80px;
+  letter-spacing: 0.08em;
+  background-color: yellow;
+}
+
+.broadcats-position::before {
+  content: "";
+  position: absolute;
+  background-color: inherit;
+  top: 27px;
+  left: -27px;
+  height: 150px;
+  width: 49px;
+  transform: rotate(25deg);
+}
+
+.broadcats-info {
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  display: flex;
+  padding: 0 30px;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  height: 138px;
+  left: 0;
+  bottom: 0;
+  min-width: 558px;
+  border-radius: 0 50px 0 0;
+  text-align: center;
+  color: #030e33;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 70px;
+  background-color: yellow;
+}
+
+.broadcats-info::before {
+  content: "";
+  z-index: -10;
+  position: absolute;
+  background-color: inherit;
+  top: 27px;
+  right: -27px;
+  height: 150px;
+  width: 49px;
+  transform: rotate(-25deg);
+}
+
+.broadcats-info-inner {
+  position: relative;
+  margin-right: 60px;
+}
+
+.broadcats-info-inner::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: -42px;
+  display: block;
+  color: #9b8f00;
+  background-color: #9b8f00;
+  height: 90px;
+  width: 5px;
+  transform: rotate(10deg) translateY(10px);
+}
+
+.broadcats-info-inner:last-child {
+  margin-right: 0px;
+}
+
+.broadcats-info-inner:last-child::before {
+  content: none;
 }
 
 .broadcats-position--prev {
   background: center no-repeat url("./assets/img/prev.svg");
-}
-
-.broadcats-position--next {
-  background: center no-repeat url("./assets/img/next.svg");
-}
-
-.broadcats-position--now {
-  background: center no-repeat url("./assets/img/now.svg");
 }

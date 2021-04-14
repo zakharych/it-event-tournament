@@ -1,13 +1,15 @@
 [
   {
-    "pic": "./assets/img/BG-11.png",
+    "pic": "./assets/img/seagull-5809731_1920.jpg",
     "team_1_name": "TeamJ 1",
     "team_1_score": "01",
     "team_2_name": "TeamJ 2",
     "team_2_score": "02",
-    "brodcas_position": "prev",
+    "brodcas_position": "<PREVIOUS",
+    "brodcas_info": "Bo1 / 14.04.2021 ",
     "timeOut": "0",
     "scoreBg": "true"
+
   },
   {
     "pic": "./assets/img/BG-11.png",
