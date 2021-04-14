@@ -5,9 +5,9 @@
     if (i === DB.length - 1) {
       const timeOut = sliderList.children[0].getAttribute("data-timeOut");
       if (!Number(timeOut)) {
-        setTimeout(runSlider, 7000);
+        // setTimeout(runSlider, 7000);
       } else {
-        setTimeout(runSlider, timeOut);
+        // setTimeout(runSlider, timeOut);
       }
     }
   });
@@ -93,6 +93,8 @@ function createSlides(slideInfo, i) {
     brodcasInfoArr = slideInfo.brodcas_info.split("/");
     brodcasInfoArr.forEach((element) => {
       element.trim();
+
+      
       const broadcastInfoInner = document.createElement("span");
       broadcastInfoInner.className = "broadcats-info-inner";
       broadcastInfoInner.innerText = element;

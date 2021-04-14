@@ -6,16 +6,15 @@
 
 .wrapper {
   position: relative;
-  // background-image: url("./assets/img/BG-11.png");
+  background-image: url("./assets/img/BG-11.png");
   color: white;
   background-color: #030e33;
   font-family: "Roboto", sans-serif;
   font-style: italic;
   height: 1080px;
   width: 1920px;
-  font-size: 120px;
+  font-size: 100px;
   overflow: hidden;
-  // text-transform: uppercase;
 }
 .btn {
   z-index: 10;
@@ -153,8 +152,7 @@
     top: -5px;
     right: -35px;
     display: block;
-    color: #9b8f00;
-    background-color: #9b8f00;
+    background-color: #00000040;
     height: 90px;
     width: 5px;
     transform: rotate(10deg) translateY(10px);

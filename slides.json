@@ -1,14 +1,14 @@
 [
   {
-    "pic": "./assets/img/BG-11.png",
+    "pic": "",
     "team_1_name": "TeamJ 1",
     "team_1_score": "01",
     "team_2_name": "TeamJ 2",
     "team_2_score": "02",
     "brodcas_position": "",
-    "brodcas_position_color": "green",
+    "brodcas_position_color": "#35A93B",
     "brodcas_info": "Bo1 / 14.04.2021 ",
-    "brodcas_info_color": "green",
+    "brodcas_info_color": "#35A93B",
     "brodcas_font_color": "#ffffff",
     "timeOut": "0",
     "scoreBg": "true"
@@ -21,9 +21,9 @@
     "team_2_name": "Shabunkle",
     "team_2_score": "04",
     "brodcas_position": "<PREVIOUS",
-    "brodcas_position_color": "green",
+    "brodcas_position_color": "#35A93B",
     "brodcas_info": "Bo1 / 14.04.2021 ",
-    "brodcas_info_color": "green",
+    "brodcas_info_color": "#35A93B",
     "brodcas_font_color": "#ffffff",
     "timeOut": "7",
     "scoreBg": "false"
@@ -35,9 +35,9 @@
     "team_2_name": "Bataisk Justice",
     "team_2_score": "06",
     "brodcas_position": "PREVIOUS>",
-    "brodcas_position_color": "green",
+    "brodcas_position_color": "#35A93B",
     "brodcas_info": "Bo1 / 14.04.2021 ",
-    "brodcas_info_color": "green",
+    "brodcas_info_color": "#35A93B",
     "brodcas_font_color": "#ffffff",
     "timeOut": "5",
     "scoreBg": "true"
@@ -49,9 +49,9 @@
     "team_2_name": "Royal slARK",
     "team_2_score": "08",
     "brodcas_position": "<PREVIOUS",
-    "brodcas_position_color": "green",
+    "brodcas_position_color": "#35A93B",
     "brodcas_info": "Bo1 / 14.04.2021 ",
-    "brodcas_info_color": "green",
+    "brodcas_info_color": "#35A93B",
     "brodcas_font_color": "#ffffff",
     "timeOut": "3",
     "scoreBg": "true"
