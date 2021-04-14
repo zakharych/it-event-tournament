@@ -6,7 +6,10 @@
     "team_2_name": "TeamJ 2",
     "team_2_score": "02",
     "brodcas_position": "<PREVIOUS",
+    "brodcas_position_color": "green",
     "brodcas_info": "Bo1 / 14.04.2021 ",
+    "brodcas_info_color": "green",
+    "brodcas_font_color": "#ffffff",
     "timeOut": "0",
     "scoreBg": "true"
 

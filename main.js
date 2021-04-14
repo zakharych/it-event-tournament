@@ -75,7 +75,10 @@ function createSlides(slideInfo, i) {
   teamTwo.append(teamScoreTwo);
 
   const broadcastPosition = document.createElement("div");
-  broadcastPosition.className = "broadcats-position";
+  broadcastPosition.className = "broadcats-position";  
+  broadcastPosition.style.backgroundColor = slideInfo.brodcas_position_color;
+  broadcastPosition.style.color = slideInfo.brodcas_font_color;
+
   broadcastPosition.innerText = slideInfo.brodcas_position;
   // if (slideInfo.brodcas_position) {
   //   broadcastPosition.classList.add(
@@ -86,6 +89,9 @@ function createSlides(slideInfo, i) {
 
   const broadcastInfo = document.createElement("div");
   broadcastInfo.className = "broadcats-info";
+  broadcastInfo.style.backgroundColor = slideInfo.brodcas_info_color;
+  broadcastInfo.style.color = slideInfo.brodcas_font_color;
+
   if (slideInfo.brodcas_info) {
     brodcasInfoArr = slideInfo.brodcas_info.split("/");
     brodcasInfoArr.forEach(element => {

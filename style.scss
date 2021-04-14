@@ -114,7 +114,6 @@
   }
 }
 .broadcats-info {
-  font-family: "Poppins", sans-serif;
   position: absolute;
   display: flex;
   padding: 0 30px;
@@ -129,7 +128,6 @@
   text-align: center;
   color: #030e33;
   font-weight: 700;
-  // text-transform: uppercase;
   font-style: italic;
   font-size: 70px;
   background-color: yellow;
@@ -152,7 +150,7 @@
     content: "";
     position: absolute;
     top: -5px;
-    right: -42px;
+    right: -35px;
     display: block;
     color: #9b8f00;
     background-color: #9b8f00;
