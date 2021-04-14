@@ -94,14 +94,14 @@ function createSlides(slideInfo, i) {
     brodcasInfoArr.forEach((element) => {
       element.trim();
 
-      
+
       const broadcastInfoInner = document.createElement("span");
       broadcastInfoInner.className = "broadcats-info-inner";
       broadcastInfoInner.innerText = element;
       broadcastInfo.append(broadcastInfoInner);
     });
+    scors.append(broadcastInfo);
   }
-  scors.append(broadcastInfo);
 }
 
 function runSlider() {

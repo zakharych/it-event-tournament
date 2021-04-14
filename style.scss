@@ -92,11 +92,12 @@
   height: 138px;
   right: 0;
   bottom: 0;
-  width: 558px;
+  min-width: 558px;
+  padding: 0 20px;
   border-radius: 50px 0 0 0;
   text-align: center;
   color: #030e33;
-  font-weight: 900;
+  font-weight: 700;
   text-transform: uppercase;
   font-style: italic;
   font-size: 80px;
